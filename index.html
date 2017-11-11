@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculate</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		Simple Calculator
+	</header>
+	<div class="content">
+		<div class="result_bar">
+			<div id="exp" class="exp">Ans</div>
+			<input type="text" name="result" disabled="disabled" id="result" value="0">
+		</div>
+		<div class="calc">
+			<div class="row"> 
+				<div class="btn func"  onclick="clearup()">CE</div>
+				<div class="btn func"  onclick = "add_oper('(')">(</div>
+				<div class="btn func"  onclick = "add_oper(')')">)</div>
+				<div class="btn fn" onclick = "add_oper('/')">/</div>
+			</div>
+			<div class="row"> 
+				<div class="btn" onclick = "add_oper(7)">7</div>
+				<div class="btn" onclick = "add_oper(8)">8</div>
+				<div class="btn" onclick = "add_oper(9)">9</div>
+				<div class="btn fn" onclick = "add_oper('*')">*</div>
+			</div> 
+			<div class="row"> 
+				<div class="btn"  onclick = "add_oper(4)">4</div>
+				<div class="btn"  onclick = "add_oper(5)">5</div>
+				<div class="btn"  onclick = "add_oper(6)">6</div>
+				<div class="btn fn"  onclick = "add_oper('-')">-</div>
+			</div> 
+			<div class="row"> 
+				<div class="btn"  onclick = "add_oper(1)">1</div>
+				<div class="btn"  onclick = "add_oper(2)">2</div>
+				<div class="btn"  onclick = "add_oper(3)">3</div>
+				<div class="btn fn"  onclick = "add_oper('+')">+</div>
+			</div> 
+			<div class="row"> 
+				<div class="btn"  onclick = "add_oper(0)">0</div>
+				<div class="btn"  onclick = "add_oper('.')">.</div>
+				<div class="btn"  onclick="backward()">&larr;</div>
+				<div class="btn cal_bt" onclick="getResult()">=</div>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>
